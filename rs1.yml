@@ -12,6 +12,6 @@ spec:
      labels: 
        env: production
     spec: 
-      containers:  
-      - name: myweb-con
-        image: httpd
+     containers:  
+     - name: myweb-con
+       image: httpd

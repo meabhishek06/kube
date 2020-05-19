@@ -4,8 +4,9 @@ metadata:
   name: myweb-rs
 spec:
   replicas: 3
-  selector: 
-    env: production
+  selector:
+    matchLabels:
+       env: production
   template: 
     metadata: 
      name: myweb-pod

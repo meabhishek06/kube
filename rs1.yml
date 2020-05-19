@@ -1,10 +1,10 @@
 apiVersion: apps/v1
-kind: ReplicaSet
-metadata: 
+kind: ReplicationSet
+metadata:
   name: myweb-rs
-spec: 
+spec:
   replicas: 3
-  selector:
+  selector: 
     env: production
   template: 
     metadata: 
@@ -12,6 +12,6 @@ spec:
      labels: 
        env: production
     spec: 
-     containers:  
-     - name: myweb-con
-       image: httpd
+      containers: 
+      - name: myweb-con
+        image: httpd

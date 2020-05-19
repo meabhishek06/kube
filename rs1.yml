@@ -11,7 +11,7 @@ spec:
      name: myweb-pod
      labels: 
        env: production
-     spec: 
-       containers:  
-       - name: myweb-con
-         image: httpd
+    spec: 
+      containers:  
+      - name: myweb-con
+        image: httpd

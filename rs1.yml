@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: ReplicationSet
+kind: ReplicaSet
 metadata:
   name: myweb-rs
 spec:

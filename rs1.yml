@@ -5,17 +5,13 @@ metadata:
 spec: 
   replicas: 3
   selector:
-    matchExpressions:
-      - { key: env, operator: In, values: [ production ] }
-     # - { key: region, operator: In, values: [ IN ] }
+    env: production
   template: 
     metadata: 
      name: myweb-pod
      labels: 
        env: production
-      # dc: "2"
-      # region: IN
-    spec: 
-     containers:  
-     - name: myweb-con
-       image: httpd
+     spec: 
+       containers:  
+       - name: myweb-con
+         image: httpd
